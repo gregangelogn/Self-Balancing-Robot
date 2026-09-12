@@ -1,0 +1,53 @@
+menu "IMU Configuration"
+
+    orsource "$IDF_PATH/examples/common_components/env_caps/$IDF_TARGET/Kconfig.env_caps"
+
+    config MOTOR_1_A
+        int "Motor1 control pin A"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 8 if IDF_TARGET_ESP32C2 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32C61
+        default 18
+        help
+            GPIO pin number to be used as MOTOR_1_A.
+
+    config MOTOR_1_B
+        int "Motor1 control pin B"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 9 if IDF_TARGET_ESP32C2 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32C61
+        default 19
+        help
+            GPIO pin number to be used as MOTOR_1_B.
+    
+    config MOTOR_1_PWM
+        int "Motor1 pwm pin"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 9 if IDF_TARGET_ESP32C2 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32C61
+        default 19
+        help
+            GPIO pin number to be used as MOTOR_1_PWM.
+
+    config MOTOR_2_A
+        int "Motor2 control pin A"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 8 if IDF_TARGET_ESP32C2 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32C61
+        default 18
+        help
+            GPIO pin number to be used as MOTOR_2_A.
+
+    config MOTOR_2_B
+        int "Motor2 control pin B"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 9 if IDF_TARGET_ESP32C2 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32C61
+        default 19
+        help
+            GPIO pin number to be used as MOTOR_2_B.
+    
+    config MOTOR_2_PWM
+        int "Motor2 pwm pin"
+        range ENV_GPIO_RANGE_MIN ENV_GPIO_OUT_RANGE_MAX
+        default 9 if IDF_TARGET_ESP32C2 || IDF_TARGET_ESP32H2 || IDF_TARGET_ESP32C5 || IDF_TARGET_ESP32C61
+        default 19
+        help
+            GPIO pin number to be used as MOTOR_2_PWM.
+
+endmenu
