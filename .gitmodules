@@ -1,0 +1,3 @@
+[submodule "self_balance/components/imu/third_party/BMI160_SensorAPI"]
+	path = self_balance/components/imu/third_party/BMI160_SensorAPI
+	url = https://github.com/boschsensortec/BMI160_SensorAPI.git
