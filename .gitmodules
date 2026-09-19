@@ -1,3 +1,6 @@
 [submodule "self_balance/components/imu/third_party/BMI160_SensorAPI"]
 	path = self_balance/components/imu/third_party/BMI160_SensorAPI
 	url = https://github.com/boschsensortec/BMI160_SensorAPI.git
+[submodule "self_balance/components/imu/third_party/esp32_BNO08x"]
+	path = self_balance/components/imu/third_party/esp32_BNO08x
+	url = https://github.com/myles-parfeniuk/esp32_BNO08x.git
